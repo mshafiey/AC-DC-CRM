@@ -1,3 +1,4 @@
+import email
 from django.db import models
 from django.urls import reverse
 
@@ -274,3 +275,35 @@ class CustomerCall(models.Model):
 
     def get_absolute_url(self):
         return reverse("CustomerCall_detail", kwargs={"pk": self.pk})
+
+class Director(models.Model):
+    UserName = models.CharField(max_length=20)
+    password = models.CharField(max_length=12)
+    email = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.UserName
+
+class Manager(models.Model):
+    UserName = models.CharField(max_length=20)
+    password = models.CharField(max_length=12)
+    email = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.UserName
+
+class Employee(models.Model):
+    UserName = models.CharField(max_length=20)
+    password = models.CharField(max_length=12)
+    email = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.UserName
+
+class TechnicalHelp(models.Model):
+    UserName = models.CharField(max_length=20)
+    password = models.CharField(max_length=12)
+    email = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.UserName
