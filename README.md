@@ -1,13 +1,14 @@
-# AC-DC-CRM
+### Dependencies
 
-Make enviroment
-
-```bash
- python -m venv .venv
+```
+django-filter=2.4.0
 ```
 
-active .venv enviromnt
+### Run the following commands to get started:
 
-```bash
- source .venv/bin/activate
+```
+pip install django django-filter
+python manage.py makemigrations crm tasks
+python manage.py migrate
+python manage.py runserver
 ```

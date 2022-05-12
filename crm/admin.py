@@ -1,16 +1,7 @@
 from django.contrib import admin
-from .models import Customer
-from .models import CustomerCall
-from .models import Director, Manager, Employee, TechnicalHelp
 
+# Register your models here.
+from .models import *
 admin.site.register(Customer)
-
-admin.site.register(CustomerCall)
-
-admin.site.register(Director)
-
-admin.site.register(Manager)
-
-admin.site.register(Employee)
-
-admin.site.register(TechnicalHelp)
+admin.site.register(Product)
+admin.site.register(Order)
