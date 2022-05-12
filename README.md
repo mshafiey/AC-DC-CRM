@@ -1,7 +1,9 @@
 ### Dependencies
 
 ```
-django-filter=2.4.0
+python -m venv .venv
+source .venv/bin/activate
+
 ```
 
 ### Run the following commands to get started:
