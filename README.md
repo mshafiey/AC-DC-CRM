@@ -1,6 +1,7 @@
 ### Dependencies
 
 ```
+git clone https://github.com/mshafiey/AC-DC-CRM.git
 python -m venv .venv
 source .venv/bin/activate
 
